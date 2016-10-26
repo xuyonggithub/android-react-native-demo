@@ -1,0 +1,3 @@
+/Users/xuyong/code/sj/XinHttp/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/xuyong/code/sj/XinHttp/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/xuyong/code/sj/XinHttp/app/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/native-lib.dir

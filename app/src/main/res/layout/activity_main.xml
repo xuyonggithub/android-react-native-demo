@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shengjing.industry.industrydemo.activity.MainActivity">
+
+<!--    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/frag_list"
+            android:tag="list"
+            android:name="com.shengjing.industry.industrydemo.fragment.ListFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_list">
+        </fragment>
+
+        <fragment
+            android:id="@+id/frag_me"
+            android:tag="me"
+            android:name="com.shengjing.industry.industrydemo.fragment.MeFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_me">
+        </fragment>
+
+        <fragment
+            android:id="@+id/frag_main"
+            android:tag="main"
+            android:name="com.shengjing.industry.industrydemo.fragment.MainFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_main">
+        </fragment>
+    </LinearLayout>
+
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:id="@+id/button_list"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/btn_home_selector"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:id="@+id/button_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="52dp"
+                android:layout_marginTop="6dp"
+                android:padding="2dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_me_selector"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/button_scan"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_record_selector"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>-->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        design:itemIconTint="@color/item_text_color"
+        design:itemTextColor="@color/item_text_color"
+        design:menu="@menu/menu_navigation"/>
+</LinearLayout>
