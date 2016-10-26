@@ -1,1 +1,1 @@
-include ':app', ':xinhttp'
+include ':app'
